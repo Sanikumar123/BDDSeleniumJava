@@ -52,7 +52,7 @@ public class DemoHomepage extends ReusableActions {
 	
 	
 	public void clickOnSelectedProduct(String product)
-	{ 
+	{ 	Thread.sleep(3000);
 		waitForPageToLoad(driver,userName);
 		for(int i=1;i<tbody.size();i++)
 		{
