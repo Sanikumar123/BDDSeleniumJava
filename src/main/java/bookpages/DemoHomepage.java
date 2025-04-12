@@ -52,7 +52,8 @@ public class DemoHomepage extends ReusableActions {
 	
 	
 	public void clickOnSelectedProduct(String product)
-	{
+	{ 
+		waitForPageToLoad(driver,userName);
 		for(int i=1;i<tbody.size();i++)
 		{
 			WebElement prd = driver.findElement(By.xpath("(//div[@id='tbodyid'])[1]/div["+i+"]/div/div/h4/a"));
